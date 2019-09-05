@@ -23,7 +23,7 @@ public class BeanManager {
 		clientHttpRequestFactory.setConnectTimeout(timeout);
 		clientHttpRequestFactory.setReadTimeout(timeout);
 		clientHttpRequestFactory.setConnectionRequestTimeout(timeout);
-		;
+		
 		return new RestTemplate(clientHttpRequestFactory);
 	}
 
