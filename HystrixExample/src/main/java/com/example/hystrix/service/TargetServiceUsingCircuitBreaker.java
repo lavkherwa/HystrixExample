@@ -46,6 +46,7 @@ public class TargetServiceUsingCircuitBreaker {
 		 *  This is another example of AllAboutRest - TestController
 		 */
 		try {
+			System.out.println("target is called");
 			response = restTemplate.getForObject("http://localhost:8080/api/message", String.class);
 		} catch (HttpClientErrorException exception) {
 			response = "Message: " + exception.getMessage();
